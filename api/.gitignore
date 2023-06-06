@@ -9,6 +9,8 @@
 /src/.env
 /src/.env.backup
 /src/.env.production
+/src/.supevisord.log
+/src/.supevisord.pid
 /src/.phpunit.result.cache
 /src/Homestead.json
 /src/Homestead.yaml
