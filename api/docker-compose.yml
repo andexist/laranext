@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  api:
+    container_name: api
+    build:
+      context: '.'
+      args:
+        - APP_ENV=development
+        - COMPOSER_NO_INTERACTION=0
+    image: api
+    ports:
+      - 3006:80
+    networks:
+      - apinet  
+    volumes:
+      - ./src:/app
+    command: bash -c "composer update --lock --prefer-source && supervisord"
+  
+  mysql-server:
+    image: mysql:8.0
+    container_name: api-db
+    environment:
+      MYSQL_DATABASE: api
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3307:3306
+    networks:
+      - apinet  
+    volumes:
+      - ./src/storage/dbdata:/var/lib/mysql:rw
+
+networks:
+  apinet:
+    name: app_network
