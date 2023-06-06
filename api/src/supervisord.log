@@ -41,3 +41,28 @@
 2023-06-06 08:09:35,241 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2023-06-06 08:09:35,241 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2023-06-06 08:09:36,350 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-06 11:29:07,684 WARN received SIGQUIT indicating exit request
+2023-06-06 11:29:07,686 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-06 11:29:09,700 INFO stopped: crond (terminated by SIGTERM)
+2023-06-06 11:29:09,745 INFO stopped: php-fpmd (exit status 0)
+2023-06-06 11:29:09,827 INFO stopped: nginxd (exit status 0)
+2023-06-06 11:29:10,829 INFO waiting for syslogd to die
+2023-06-06 11:29:10,944 INFO stopped: syslogd (exit status 0)
+2023-06-06 11:35:14,204 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-06 11:35:14,205 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-06 11:35:14,205 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-06 11:35:14,205 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-06 11:35:14,205 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-06 11:35:14,205 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-06 11:35:14,205 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-06 11:35:14,205 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-06 11:35:14,214 INFO RPC interface 'supervisor' initialized
+2023-06-06 11:35:14,214 INFO supervisord started with pid 1
+2023-06-06 11:35:15,219 INFO spawned: 'syslogd' with pid 96
+2023-06-06 11:35:15,225 INFO spawned: 'nginxd' with pid 97
+2023-06-06 11:35:15,231 INFO spawned: 'php-fpmd' with pid 98
+2023-06-06 11:35:15,240 INFO spawned: 'crond' with pid 99
+2023-06-06 11:35:15,248 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-06 11:35:15,248 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-06 11:35:15,249 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-06 11:35:16,373 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
