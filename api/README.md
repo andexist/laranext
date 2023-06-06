@@ -1,4 +1,4 @@
-This is a [Laravel](https://laravel.org/) project
+This is a [Laravel](https://laravel.com/) project
 ## Getting Started
 
 First, build docker image:
