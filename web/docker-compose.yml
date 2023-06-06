@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+    web:
+        container_name: web
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: web
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/app
+        networks:
+            - webnet
+        command: npm run dev
+
+networks:
+    webnet:
+        external:
+            name: app_network
