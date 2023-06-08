@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use App\Collections\Task\TaskCollection;
 use App\Traits\HasAuthor;
 use App\Traits\ModelHelpers;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Collection;
 
 class Task extends Model
 {
@@ -44,5 +46,16 @@ class Task extends Model
     public function timeSpent(): int
     {
         return $this->time_spent ?? 0;
+    }
+
+    /**
+     * Create a new Eloquent Collection instance.
+     *
+     * @param  array<int, \Illuminate\Database\Eloquent\Model>  $models
+     * @return \Illuminate\Database\Eloquent\Collection<int, \Illuminate\Database\Eloquent\Model>
+     */
+    public function newCollection(array $models = []): Collection
+    {
+        return new TaskCollection($models);
     }
 }

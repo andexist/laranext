@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API\V1;
+namespace App\Http\Controllers\API\V1\Task;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\API\V1\Task\StoreTaskRequest;
@@ -8,7 +8,6 @@ use App\Http\Requests\API\V1\Task\UpdateTaskRequest;
 use App\Http\Resources\V1\TaskResource;
 use App\Http\Resources\V1\TaskResourceCollection;
 use App\Models\Task;
-use App\Models\User;
 use Symfony\Component\HttpFoundation\Response;
 
 class TaskController extends Controller

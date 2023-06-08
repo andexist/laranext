@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\API\V1\TaskController;
+use App\Http\Controllers\API\V1\Task\TaskController;
 use App\Http\Controllers\API\V1\AuthorController;
-use App\Http\Controllers\API\V1\DataExporterController;
+use App\Http\Controllers\API\V1\Task\TaskExporterController;
 use App\Http\Controllers\API\V1\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -30,5 +30,8 @@ Route::group(
 
         Route::get('/user', UserController::class);
 
-       // Route::post('/export', [DataExporterController::class, 'export']);
+       // Export task to variuos formats
+       Route::get('/tasks/export/csv', [TaskExporterController::class, 'exportToCSV']);
+       Route::get('/tasks/export/xlsx', [TaskExporterController::class, 'exportToXLSX']);
+       Route::get('/tasks/export/pdf', [TaskExporterController::class, 'exportToPDF']);
 });
