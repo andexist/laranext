@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers\API\V1\Task;
 
+use App\Helpers\CollectionPaginator;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\API\V1\Task\StoreTaskRequest;
 use App\Http\Requests\API\V1\Task\UpdateTaskRequest;
 use App\Http\Resources\V1\TaskResource;
 use App\Http\Resources\V1\TaskResourceCollection;
 use App\Models\Task;
+use App\Models\User;
 use Symfony\Component\HttpFoundation\Response;
 
 class TaskController extends Controller
 {
+    private static $pages = 10;
+
     /**
      * Display a listing of the resource.
      */
@@ -20,7 +24,8 @@ class TaskController extends Controller
         // uncomment this for testing api response
         //$user = User::where('email', 'john@test.com')->firstOrFail();
         $user = auth()->user();
-        $tasks = $user->tasks;
+
+        $tasks = CollectionPaginator::paginate($user->tasks, self::$pages);
 
         return new TaskResourceCollection($tasks);
     }

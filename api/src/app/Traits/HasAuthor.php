@@ -22,7 +22,7 @@ trait HasAuthor {
         return $this->author()->matches($user);
     }
 
-    public function authordrBy(User $author)
+    public function authoredBy(User $author)
     {
         return $this->authorRelation()->associate($author);
     }
