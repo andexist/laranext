@@ -24,7 +24,7 @@ class TaskController extends Controller
         //$user = User::where('email', 'john@test.com')->firstOrFail();
         $user = auth()->user();
 
-        $tasks = CollectionPaginator::paginate($user->tasks, $request->pages());
+        $tasks = CollectionPaginator::paginate($user->tasks, $request->pageSize());
 
         return new TaskResourceCollection($tasks);
     }

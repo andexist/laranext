@@ -22,12 +22,12 @@ class PaginatorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'pages' => 'integer',
+            'pageSize' => 'integer',
         ];
     }
 
-    public function pages(): int
+    public function pageSize(): int
     {
-        return $this->pages ?? 10;
+        return $this->pageSize ?? 10;
     }
 }
