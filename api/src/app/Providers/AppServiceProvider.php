@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Elasticsearch\ElasticsearchClient;
+use App\Elasticsearch\ElasticsearchClientInterface;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 
@@ -23,5 +25,14 @@ class AppServiceProvider extends ServiceProvider
         Str::macro('snakeToTitle', function($value) {
             return ucfirst(str_replace('_', ' ', $value));
         });
+
+        $this->app->singleton(
+            ElasticsearchClientInterface::class,
+            static function ($app) {
+                return new ElasticsearchClient(
+                    config('services.elasticsearch.host')
+                );
+            }
+        );
     }
 }

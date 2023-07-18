@@ -4,7 +4,7 @@
 /src/public/hot
 /src/public/storage
 /src/storage/*.key
-/src/storage/dbdata
+/src/storage/mysql
 /src/vendor
 /src/.env
 /src/.env.backup

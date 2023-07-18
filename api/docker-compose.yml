@@ -28,7 +28,42 @@ services:
     networks:
       - apinet  
     volumes:
-      - ./src/storage/dbdata:/var/lib/mysql:rw
+      - ./src/storage/mysql:/var/lib/mysql:rw
+
+  elasticsearch:
+    image: elasticsearch:8.8.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - cluster.name=elasticsearch
+      - xpack.security.enabled=false
+      - 'ES_JAVA_OPTS=-Xms25m -Xmx256m'
+    ports:
+      - 9200:9200
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    networks:
+      - apinet
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  kibana:
+    image: kibana:8.8.0
+    container_name: kibana
+    ports:
+      - 5601:5601
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - apinet
+
+volumes:
+  es_data:
+    driver: local
 
 networks:
   apinet:

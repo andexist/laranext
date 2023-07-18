@@ -18,6 +18,7 @@ RUN php composer-setup.php --install-dir=/usr/bin --version=2.5.5
 RUN rm -f composer-setup.php
 
 COPY --chown=1000:1000 ./src /app
+
 WORKDIR /app
 RUN chmod 777 -R storage
 RUN chown -R www-data:www-data storage

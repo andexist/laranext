@@ -141,3 +141,1275 @@
 2023-06-08 06:08:52,028 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2023-06-08 06:08:52,028 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2023-06-08 06:08:53,127 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-13 13:23:46,649 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-13 13:23:46,649 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-13 13:23:46,649 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-13 13:23:46,649 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-13 13:23:46,649 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-13 13:23:46,649 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-13 13:23:46,649 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-13 13:23:46,649 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-13 13:23:46,659 INFO RPC interface 'supervisor' initialized
+2023-06-13 13:23:46,659 INFO supervisord started with pid 1
+2023-06-13 13:23:47,661 INFO spawned: 'syslogd' with pid 96
+2023-06-13 13:23:47,663 INFO spawned: 'nginxd' with pid 97
+2023-06-13 13:23:47,665 INFO spawned: 'php-fpmd' with pid 98
+2023-06-13 13:23:47,667 INFO spawned: 'crond' with pid 99
+2023-06-13 13:23:47,675 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-13 13:23:47,675 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-13 13:23:47,676 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-13 13:23:48,821 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-13 13:26:58,761 WARN received SIGQUIT indicating exit request
+2023-06-13 13:26:58,762 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-13 13:27:00,771 INFO stopped: crond (terminated by SIGTERM)
+2023-06-13 13:27:00,823 INFO stopped: php-fpmd (exit status 0)
+2023-06-13 13:27:00,902 INFO stopped: nginxd (exit status 0)
+2023-06-13 13:27:01,904 INFO waiting for syslogd to die
+2023-06-13 13:27:02,011 INFO stopped: syslogd (exit status 0)
+2023-06-13 13:27:24,618 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-13 13:27:24,618 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-13 13:27:24,618 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-13 13:27:24,618 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-13 13:27:24,618 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-13 13:27:24,618 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-13 13:27:24,618 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-13 13:27:24,618 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-13 13:27:24,625 INFO RPC interface 'supervisor' initialized
+2023-06-13 13:27:24,625 INFO supervisord started with pid 1
+2023-06-13 13:27:25,628 INFO spawned: 'syslogd' with pid 95
+2023-06-13 13:27:25,630 INFO spawned: 'nginxd' with pid 96
+2023-06-13 13:27:25,631 INFO spawned: 'php-fpmd' with pid 97
+2023-06-13 13:27:25,633 INFO spawned: 'crond' with pid 98
+2023-06-13 13:27:25,637 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-13 13:27:25,638 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-13 13:27:25,638 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-13 13:27:26,764 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-13 13:28:31,449 WARN received SIGQUIT indicating exit request
+2023-06-13 13:28:31,450 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-13 13:28:33,455 INFO stopped: crond (terminated by SIGTERM)
+2023-06-13 13:28:34,505 INFO stopped: php-fpmd (exit status 0)
+2023-06-13 13:28:34,506 INFO waiting for nginxd, syslogd to die
+2023-06-13 13:28:34,606 INFO stopped: nginxd (exit status 0)
+2023-06-13 13:28:35,714 INFO stopped: syslogd (exit status 0)
+2023-06-14 05:34:18,976 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 05:34:18,976 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 05:34:18,976 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 05:34:18,976 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 05:34:18,976 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 05:34:18,976 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 05:34:18,976 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 05:34:18,976 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 05:34:18,986 INFO RPC interface 'supervisor' initialized
+2023-06-14 05:34:18,987 INFO supervisord started with pid 1
+2023-06-14 05:34:19,989 INFO spawned: 'syslogd' with pid 96
+2023-06-14 05:34:19,991 INFO spawned: 'nginxd' with pid 97
+2023-06-14 05:34:19,992 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 05:34:19,993 INFO spawned: 'crond' with pid 99
+2023-06-14 05:34:19,996 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:34:19,996 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:34:19,996 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:34:21,104 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 05:39:23,646 WARN received SIGQUIT indicating exit request
+2023-06-14 05:39:23,646 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 05:39:25,652 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 05:39:25,680 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 05:39:25,791 INFO stopped: nginxd (exit status 0)
+2023-06-14 05:39:26,794 INFO waiting for syslogd to die
+2023-06-14 05:39:26,906 INFO stopped: syslogd (exit status 0)
+2023-06-14 05:39:34,452 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 05:39:34,452 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 05:39:34,452 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 05:39:34,453 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 05:39:34,453 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 05:39:34,453 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 05:39:34,453 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 05:39:34,453 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 05:39:34,459 INFO RPC interface 'supervisor' initialized
+2023-06-14 05:39:34,459 INFO supervisord started with pid 1
+2023-06-14 05:39:35,460 INFO spawned: 'syslogd' with pid 94
+2023-06-14 05:39:35,461 INFO spawned: 'nginxd' with pid 95
+2023-06-14 05:39:35,463 INFO spawned: 'php-fpmd' with pid 96
+2023-06-14 05:39:35,464 INFO spawned: 'crond' with pid 97
+2023-06-14 05:39:35,466 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:39:35,467 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:39:35,467 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:39:36,560 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 05:51:08,521 WARN received SIGQUIT indicating exit request
+2023-06-14 05:51:08,521 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 05:51:10,527 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 05:51:10,569 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 05:51:10,649 INFO stopped: nginxd (exit status 0)
+2023-06-14 05:51:11,651 INFO waiting for syslogd to die
+2023-06-14 05:51:11,756 INFO stopped: syslogd (exit status 0)
+2023-06-14 05:59:33,080 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 05:59:33,081 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 05:59:33,081 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 05:59:33,081 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 05:59:33,081 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 05:59:33,081 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 05:59:33,081 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 05:59:33,081 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 05:59:33,092 INFO RPC interface 'supervisor' initialized
+2023-06-14 05:59:33,093 INFO supervisord started with pid 1
+2023-06-14 05:59:34,096 INFO spawned: 'syslogd' with pid 96
+2023-06-14 05:59:34,098 INFO spawned: 'nginxd' with pid 97
+2023-06-14 05:59:34,099 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 05:59:34,101 INFO spawned: 'crond' with pid 99
+2023-06-14 05:59:34,105 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:59:34,105 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:59:34,105 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 05:59:35,233 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 06:02:48,268 WARN received SIGQUIT indicating exit request
+2023-06-14 06:02:48,268 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 06:02:50,273 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 06:02:50,295 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 06:02:50,437 INFO stopped: nginxd (exit status 0)
+2023-06-14 06:02:51,439 INFO waiting for syslogd to die
+2023-06-14 06:02:51,545 INFO stopped: syslogd (exit status 0)
+2023-06-14 06:17:22,250 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 06:17:22,250 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 06:17:22,250 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 06:17:22,250 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 06:17:22,250 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 06:17:22,250 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 06:17:22,250 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 06:17:22,250 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 06:17:22,259 INFO RPC interface 'supervisor' initialized
+2023-06-14 06:17:22,259 INFO supervisord started with pid 1
+2023-06-14 06:17:23,261 INFO spawned: 'syslogd' with pid 92
+2023-06-14 06:17:23,263 INFO spawned: 'nginxd' with pid 93
+2023-06-14 06:17:23,264 INFO spawned: 'php-fpmd' with pid 94
+2023-06-14 06:17:23,266 INFO spawned: 'crond' with pid 95
+2023-06-14 06:17:23,269 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:17:23,269 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:17:23,269 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:17:24,369 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 06:22:01,127 WARN received SIGQUIT indicating exit request
+2023-06-14 06:22:01,127 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 06:22:03,131 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 06:22:03,173 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 06:22:03,293 INFO stopped: nginxd (exit status 0)
+2023-06-14 06:22:04,295 INFO waiting for syslogd to die
+2023-06-14 06:22:04,401 INFO stopped: syslogd (exit status 0)
+2023-06-14 06:31:49,546 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 06:31:49,546 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 06:31:49,546 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 06:31:49,546 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 06:31:49,546 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 06:31:49,547 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 06:31:49,547 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 06:31:49,547 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 06:31:49,558 INFO RPC interface 'supervisor' initialized
+2023-06-14 06:31:49,558 INFO supervisord started with pid 1
+2023-06-14 06:31:50,560 INFO spawned: 'syslogd' with pid 97
+2023-06-14 06:31:50,562 INFO spawned: 'nginxd' with pid 98
+2023-06-14 06:31:50,564 INFO spawned: 'php-fpmd' with pid 99
+2023-06-14 06:31:50,565 INFO spawned: 'crond' with pid 100
+2023-06-14 06:31:50,575 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:31:50,575 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:31:50,575 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:31:51,724 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 06:43:16,978 WARN received SIGQUIT indicating exit request
+2023-06-14 06:43:16,978 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 06:43:18,982 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 06:43:20,030 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 06:43:20,031 INFO waiting for nginxd, syslogd to die
+2023-06-14 06:43:20,108 INFO stopped: nginxd (exit status 0)
+2023-06-14 06:43:21,217 INFO stopped: syslogd (exit status 0)
+2023-06-14 06:44:54,451 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 06:44:54,451 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 06:44:54,451 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 06:44:54,451 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 06:44:54,451 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 06:44:54,451 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 06:44:54,451 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 06:44:54,451 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 06:44:54,457 INFO RPC interface 'supervisor' initialized
+2023-06-14 06:44:54,457 INFO supervisord started with pid 1
+2023-06-14 06:44:55,459 INFO spawned: 'syslogd' with pid 94
+2023-06-14 06:44:55,461 INFO spawned: 'nginxd' with pid 95
+2023-06-14 06:44:55,462 INFO spawned: 'php-fpmd' with pid 96
+2023-06-14 06:44:55,464 INFO spawned: 'crond' with pid 97
+2023-06-14 06:44:55,465 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:44:55,465 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:44:55,465 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:44:56,584 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 06:49:16,250 WARN received SIGQUIT indicating exit request
+2023-06-14 06:49:16,251 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 06:49:18,256 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 06:49:19,290 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 06:49:19,291 INFO waiting for nginxd, syslogd to die
+2023-06-14 06:49:19,388 INFO stopped: nginxd (exit status 0)
+2023-06-14 06:49:20,493 INFO stopped: syslogd (exit status 0)
+2023-06-14 06:49:27,651 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 06:49:27,651 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 06:49:27,651 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 06:49:27,651 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 06:49:27,651 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 06:49:27,651 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 06:49:27,651 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 06:49:27,651 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 06:49:27,658 INFO RPC interface 'supervisor' initialized
+2023-06-14 06:49:27,658 INFO supervisord started with pid 1
+2023-06-14 06:49:28,660 INFO spawned: 'syslogd' with pid 95
+2023-06-14 06:49:28,661 INFO spawned: 'nginxd' with pid 96
+2023-06-14 06:49:28,663 INFO spawned: 'php-fpmd' with pid 97
+2023-06-14 06:49:28,665 INFO spawned: 'crond' with pid 98
+2023-06-14 06:49:28,666 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:49:28,667 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:49:28,667 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 06:49:29,775 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 07:01:05,527 WARN received SIGQUIT indicating exit request
+2023-06-14 07:01:05,528 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 07:01:07,534 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 07:01:07,563 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 07:01:07,669 INFO stopped: nginxd (exit status 0)
+2023-06-14 07:01:08,671 INFO waiting for syslogd to die
+2023-06-14 07:01:08,777 INFO stopped: syslogd (exit status 0)
+2023-06-14 07:01:16,137 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 07:01:16,137 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 07:01:16,137 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 07:01:16,137 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 07:01:16,137 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 07:01:16,137 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 07:01:16,137 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 07:01:16,137 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 07:01:16,145 INFO RPC interface 'supervisor' initialized
+2023-06-14 07:01:16,145 INFO supervisord started with pid 1
+2023-06-14 07:01:17,147 INFO spawned: 'syslogd' with pid 95
+2023-06-14 07:01:17,148 INFO spawned: 'nginxd' with pid 96
+2023-06-14 07:01:17,150 INFO spawned: 'php-fpmd' with pid 97
+2023-06-14 07:01:17,152 INFO spawned: 'crond' with pid 98
+2023-06-14 07:01:17,153 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:01:17,154 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:01:17,154 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:01:18,264 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 07:24:41,961 WARN received SIGQUIT indicating exit request
+2023-06-14 07:24:41,962 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 07:24:43,967 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 07:24:43,993 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 07:24:44,093 INFO stopped: nginxd (exit status 0)
+2023-06-14 07:24:45,096 INFO waiting for syslogd to die
+2023-06-14 07:24:45,201 INFO stopped: syslogd (exit status 0)
+2023-06-14 07:25:59,454 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 07:25:59,454 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 07:25:59,454 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 07:25:59,454 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 07:25:59,454 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 07:25:59,454 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 07:25:59,454 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 07:25:59,454 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 07:25:59,465 INFO RPC interface 'supervisor' initialized
+2023-06-14 07:25:59,465 INFO supervisord started with pid 1
+2023-06-14 07:26:00,467 INFO spawned: 'syslogd' with pid 94
+2023-06-14 07:26:00,468 INFO spawned: 'nginxd' with pid 95
+2023-06-14 07:26:00,470 INFO spawned: 'php-fpmd' with pid 96
+2023-06-14 07:26:00,471 INFO spawned: 'crond' with pid 97
+2023-06-14 07:26:00,473 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:26:00,473 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:26:00,473 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:26:01,566 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 07:26:29,548 WARN received SIGQUIT indicating exit request
+2023-06-14 07:26:29,548 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 07:26:31,553 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 07:26:32,593 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 07:26:32,594 INFO waiting for nginxd, syslogd to die
+2023-06-14 07:26:32,700 INFO stopped: nginxd (exit status 0)
+2023-06-14 07:26:33,807 INFO stopped: syslogd (exit status 0)
+2023-06-14 07:31:02,572 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 07:31:02,573 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 07:31:02,573 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 07:31:02,573 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 07:31:02,573 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 07:31:02,573 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 07:31:02,573 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 07:31:02,573 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 07:31:02,588 INFO RPC interface 'supervisor' initialized
+2023-06-14 07:31:02,588 INFO supervisord started with pid 1
+2023-06-14 07:31:03,591 INFO spawned: 'syslogd' with pid 96
+2023-06-14 07:31:03,593 INFO spawned: 'nginxd' with pid 97
+2023-06-14 07:31:03,595 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 07:31:03,597 INFO spawned: 'crond' with pid 99
+2023-06-14 07:31:03,601 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:31:03,602 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:31:03,602 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 07:31:04,722 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 07:33:34,494 WARN received SIGQUIT indicating exit request
+2023-06-14 07:33:34,494 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 07:33:36,498 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 07:33:36,526 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 07:33:36,613 INFO stopped: nginxd (exit status 0)
+2023-06-14 07:33:37,615 INFO waiting for syslogd to die
+2023-06-14 07:33:37,720 INFO stopped: syslogd (exit status 0)
+2023-06-14 09:56:27,799 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 09:56:27,800 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 09:56:27,800 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 09:56:27,800 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 09:56:27,800 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 09:56:27,800 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 09:56:27,800 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 09:56:27,800 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 09:56:27,807 INFO RPC interface 'supervisor' initialized
+2023-06-14 09:56:27,807 INFO supervisord started with pid 1
+2023-06-14 09:56:28,809 INFO spawned: 'syslogd' with pid 96
+2023-06-14 09:56:28,810 INFO spawned: 'nginxd' with pid 97
+2023-06-14 09:56:28,811 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 09:56:28,812 INFO spawned: 'crond' with pid 99
+2023-06-14 09:56:28,815 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 09:56:28,815 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 09:56:28,816 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 09:56:29,912 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 09:58:40,460 INFO reaped unknown pid 142
+2023-06-14 09:58:40,491 INFO reaped unknown pid 141
+2023-06-14 09:58:46,040 WARN received SIGQUIT indicating exit request
+2023-06-14 09:58:46,040 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 09:58:48,045 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 09:58:48,071 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 09:58:48,193 INFO stopped: nginxd (exit status 0)
+2023-06-14 09:58:49,195 INFO waiting for syslogd to die
+2023-06-14 09:58:49,302 INFO stopped: syslogd (exit status 0)
+2023-06-14 10:48:00,518 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 10:48:00,518 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 10:48:00,518 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 10:48:00,519 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 10:48:00,519 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 10:48:00,519 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 10:48:00,519 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 10:48:00,519 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 10:48:00,527 INFO RPC interface 'supervisor' initialized
+2023-06-14 10:48:00,527 INFO supervisord started with pid 1
+2023-06-14 10:48:01,530 INFO spawned: 'syslogd' with pid 96
+2023-06-14 10:48:01,531 INFO spawned: 'nginxd' with pid 97
+2023-06-14 10:48:01,533 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 10:48:01,535 INFO spawned: 'crond' with pid 99
+2023-06-14 10:48:01,537 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 10:48:01,537 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 10:48:01,537 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 10:48:02,680 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 12:05:08,496 WARN received SIGQUIT indicating exit request
+2023-06-14 12:05:08,502 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 12:05:10,510 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 12:05:11,652 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 12:05:11,653 INFO waiting for nginxd, syslogd to die
+2023-06-14 12:05:11,781 INFO stopped: nginxd (exit status 0)
+2023-06-14 12:05:12,907 INFO stopped: syslogd (exit status 0)
+2023-06-14 12:15:10,425 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 12:15:10,425 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 12:15:10,426 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 12:15:10,426 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 12:15:10,426 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 12:15:10,426 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 12:15:10,426 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 12:15:10,426 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 12:15:10,435 INFO RPC interface 'supervisor' initialized
+2023-06-14 12:15:10,436 INFO supervisord started with pid 1
+2023-06-14 12:15:11,439 INFO spawned: 'syslogd' with pid 96
+2023-06-14 12:15:11,440 INFO spawned: 'nginxd' with pid 97
+2023-06-14 12:15:11,442 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 12:15:11,444 INFO spawned: 'crond' with pid 99
+2023-06-14 12:15:11,448 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:15:11,448 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:15:11,448 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:15:12,572 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 12:21:27,299 WARN received SIGQUIT indicating exit request
+2023-06-14 12:21:27,305 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 12:21:29,311 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 12:21:30,394 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 12:21:30,396 INFO waiting for nginxd, syslogd to die
+2023-06-14 12:21:30,466 INFO stopped: nginxd (exit status 0)
+2023-06-14 12:21:31,576 INFO stopped: syslogd (exit status 0)
+2023-06-14 12:22:43,257 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 12:22:43,257 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 12:22:43,257 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 12:22:43,257 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 12:22:43,257 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 12:22:43,257 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 12:22:43,257 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 12:22:43,257 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 12:22:43,269 INFO RPC interface 'supervisor' initialized
+2023-06-14 12:22:43,269 INFO supervisord started with pid 1
+2023-06-14 12:22:44,271 INFO spawned: 'syslogd' with pid 94
+2023-06-14 12:22:44,273 INFO spawned: 'nginxd' with pid 95
+2023-06-14 12:22:44,274 INFO spawned: 'php-fpmd' with pid 96
+2023-06-14 12:22:44,276 INFO spawned: 'crond' with pid 97
+2023-06-14 12:22:44,278 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:22:44,278 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:22:44,278 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:22:45,391 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 12:22:48,716 WARN received SIGQUIT indicating exit request
+2023-06-14 12:22:48,716 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 12:22:50,722 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 12:22:51,748 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 12:22:51,751 INFO waiting for nginxd, syslogd to die
+2023-06-14 12:22:51,825 INFO stopped: nginxd (exit status 0)
+2023-06-14 12:22:52,930 INFO stopped: syslogd (exit status 0)
+2023-06-14 12:51:47,881 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 12:51:47,882 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 12:51:47,882 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 12:51:47,882 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 12:51:47,882 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 12:51:47,882 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 12:51:47,882 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 12:51:47,882 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 12:51:47,892 INFO RPC interface 'supervisor' initialized
+2023-06-14 12:51:47,893 INFO supervisord started with pid 1
+2023-06-14 12:51:48,895 INFO spawned: 'syslogd' with pid 95
+2023-06-14 12:51:48,897 INFO spawned: 'nginxd' with pid 96
+2023-06-14 12:51:48,898 INFO spawned: 'php-fpmd' with pid 97
+2023-06-14 12:51:48,900 INFO spawned: 'crond' with pid 98
+2023-06-14 12:51:48,902 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:51:48,903 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:51:48,903 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 12:51:50,014 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 12:52:52,680 WARN received SIGQUIT indicating exit request
+2023-06-14 12:52:52,681 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 12:52:54,686 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 12:52:54,742 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 12:52:54,838 INFO stopped: nginxd (exit status 0)
+2023-06-14 12:52:55,841 INFO waiting for syslogd to die
+2023-06-14 12:52:55,949 INFO stopped: syslogd (exit status 0)
+2023-06-14 18:26:19,630 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 18:26:19,630 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 18:26:19,630 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 18:26:19,630 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 18:26:19,630 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 18:26:19,630 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 18:26:19,630 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 18:26:19,630 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 18:26:19,639 INFO RPC interface 'supervisor' initialized
+2023-06-14 18:26:19,639 INFO supervisord started with pid 1
+2023-06-14 18:26:20,642 INFO spawned: 'syslogd' with pid 96
+2023-06-14 18:26:20,644 INFO spawned: 'nginxd' with pid 97
+2023-06-14 18:26:20,646 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 18:26:20,648 INFO spawned: 'crond' with pid 99
+2023-06-14 18:26:20,653 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 18:26:20,653 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 18:26:20,653 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 18:26:21,817 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 18:44:14,171 WARN received SIGQUIT indicating exit request
+2023-06-14 18:44:14,172 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 18:44:16,177 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 18:44:16,205 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 18:44:16,291 INFO stopped: nginxd (exit status 0)
+2023-06-14 18:44:17,293 INFO waiting for syslogd to die
+2023-06-14 18:44:17,399 INFO stopped: syslogd (exit status 0)
+2023-06-14 19:08:06,909 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 19:08:06,909 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 19:08:06,910 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 19:08:06,910 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 19:08:06,910 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 19:08:06,910 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 19:08:06,910 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 19:08:06,910 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 19:08:06,919 INFO RPC interface 'supervisor' initialized
+2023-06-14 19:08:06,920 INFO supervisord started with pid 1
+2023-06-14 19:08:07,922 INFO spawned: 'syslogd' with pid 96
+2023-06-14 19:08:07,924 INFO spawned: 'nginxd' with pid 97
+2023-06-14 19:08:07,925 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 19:08:07,927 INFO spawned: 'crond' with pid 99
+2023-06-14 19:08:07,933 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:08:07,933 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:08:07,933 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:08:09,090 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 19:19:02,868 WARN received SIGQUIT indicating exit request
+2023-06-14 19:19:02,870 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 19:19:04,874 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 19:19:04,921 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 19:19:05,022 INFO stopped: nginxd (exit status 0)
+2023-06-14 19:19:06,024 INFO waiting for syslogd to die
+2023-06-14 19:19:06,129 INFO stopped: syslogd (exit status 0)
+2023-06-14 19:27:37,212 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 19:27:37,214 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 19:27:37,214 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 19:27:37,214 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 19:27:37,214 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 19:27:37,214 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 19:27:37,214 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 19:27:37,214 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 19:27:37,228 INFO RPC interface 'supervisor' initialized
+2023-06-14 19:27:37,229 INFO supervisord started with pid 1
+2023-06-14 19:27:38,231 INFO spawned: 'syslogd' with pid 96
+2023-06-14 19:27:38,232 INFO spawned: 'nginxd' with pid 97
+2023-06-14 19:27:38,233 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 19:27:38,235 INFO spawned: 'crond' with pid 99
+2023-06-14 19:27:38,239 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:27:38,239 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:27:38,239 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:27:39,355 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 19:29:59,967 WARN received SIGQUIT indicating exit request
+2023-06-14 19:29:59,968 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 19:30:01,972 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 19:30:03,006 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 19:30:03,007 INFO waiting for nginxd, syslogd to die
+2023-06-14 19:30:03,095 INFO stopped: nginxd (exit status 0)
+2023-06-14 19:30:04,202 INFO stopped: syslogd (exit status 0)
+2023-06-14 19:30:28,072 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 19:30:28,073 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 19:30:28,073 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 19:30:28,073 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 19:30:28,073 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 19:30:28,073 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 19:30:28,073 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 19:30:28,073 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 19:30:28,079 INFO RPC interface 'supervisor' initialized
+2023-06-14 19:30:28,079 INFO supervisord started with pid 1
+2023-06-14 19:30:29,081 INFO spawned: 'syslogd' with pid 95
+2023-06-14 19:30:29,083 INFO spawned: 'nginxd' with pid 96
+2023-06-14 19:30:29,084 INFO spawned: 'php-fpmd' with pid 97
+2023-06-14 19:30:29,086 INFO spawned: 'crond' with pid 98
+2023-06-14 19:30:29,088 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:30:29,088 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:30:29,088 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:30:30,178 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 19:30:35,913 WARN received SIGQUIT indicating exit request
+2023-06-14 19:30:35,913 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 19:30:37,917 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 19:30:37,961 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 19:30:38,047 INFO stopped: nginxd (exit status 0)
+2023-06-14 19:30:39,050 INFO waiting for syslogd to die
+2023-06-14 19:30:39,156 INFO stopped: syslogd (exit status 0)
+2023-06-14 19:31:43,871 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 19:31:43,871 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 19:31:43,871 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 19:31:43,871 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 19:31:43,871 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 19:31:43,871 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 19:31:43,871 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 19:31:43,871 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 19:31:43,878 INFO RPC interface 'supervisor' initialized
+2023-06-14 19:31:43,879 INFO supervisord started with pid 1
+2023-06-14 19:31:44,881 INFO spawned: 'syslogd' with pid 97
+2023-06-14 19:31:44,883 INFO spawned: 'nginxd' with pid 98
+2023-06-14 19:31:44,884 INFO spawned: 'php-fpmd' with pid 99
+2023-06-14 19:31:44,886 INFO spawned: 'crond' with pid 100
+2023-06-14 19:31:44,887 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:31:44,887 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:31:44,887 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:31:45,988 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 19:32:15,093 WARN received SIGQUIT indicating exit request
+2023-06-14 19:32:15,093 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 19:32:17,097 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 19:32:17,123 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 19:32:17,215 INFO stopped: nginxd (exit status 0)
+2023-06-14 19:32:18,218 INFO waiting for syslogd to die
+2023-06-14 19:32:18,323 INFO stopped: syslogd (exit status 0)
+2023-06-14 19:34:02,536 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 19:34:02,536 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 19:34:02,536 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 19:34:02,536 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 19:34:02,536 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 19:34:02,536 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 19:34:02,536 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 19:34:02,536 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 19:34:02,544 INFO RPC interface 'supervisor' initialized
+2023-06-14 19:34:02,544 INFO supervisord started with pid 1
+2023-06-14 19:34:03,545 INFO spawned: 'syslogd' with pid 96
+2023-06-14 19:34:03,547 INFO spawned: 'nginxd' with pid 97
+2023-06-14 19:34:03,549 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 19:34:03,551 INFO spawned: 'crond' with pid 99
+2023-06-14 19:34:03,552 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:34:03,553 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:34:03,554 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:34:04,662 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 19:34:33,872 WARN received SIGQUIT indicating exit request
+2023-06-14 19:34:33,873 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 19:34:35,877 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 19:34:35,905 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 19:34:35,995 INFO stopped: nginxd (exit status 0)
+2023-06-14 19:34:36,998 INFO waiting for syslogd to die
+2023-06-14 19:34:37,103 INFO stopped: syslogd (exit status 0)
+2023-06-14 19:43:35,642 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-14 19:43:35,642 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-14 19:43:35,642 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-14 19:43:35,643 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-14 19:43:35,643 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-14 19:43:35,643 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-14 19:43:35,643 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-14 19:43:35,643 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-14 19:43:35,657 INFO RPC interface 'supervisor' initialized
+2023-06-14 19:43:35,657 INFO supervisord started with pid 1
+2023-06-14 19:43:36,659 INFO spawned: 'syslogd' with pid 96
+2023-06-14 19:43:36,661 INFO spawned: 'nginxd' with pid 97
+2023-06-14 19:43:36,663 INFO spawned: 'php-fpmd' with pid 98
+2023-06-14 19:43:36,665 INFO spawned: 'crond' with pid 99
+2023-06-14 19:43:36,671 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:43:36,671 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:43:36,671 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-14 19:43:37,846 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-14 19:43:55,051 WARN received SIGQUIT indicating exit request
+2023-06-14 19:43:55,051 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-14 19:43:57,056 INFO stopped: crond (terminated by SIGTERM)
+2023-06-14 19:43:58,101 INFO stopped: php-fpmd (exit status 0)
+2023-06-14 19:43:58,103 INFO waiting for nginxd, syslogd to die
+2023-06-14 19:43:58,191 INFO stopped: nginxd (exit status 0)
+2023-06-14 19:43:59,298 INFO stopped: syslogd (exit status 0)
+2023-06-15 09:37:28,489 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 09:37:28,489 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 09:37:28,489 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 09:37:28,489 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 09:37:28,489 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 09:37:28,489 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 09:37:28,489 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 09:37:28,489 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 09:37:28,497 INFO RPC interface 'supervisor' initialized
+2023-06-15 09:37:28,498 INFO supervisord started with pid 1
+2023-06-15 09:37:29,500 INFO spawned: 'syslogd' with pid 96
+2023-06-15 09:37:29,502 INFO spawned: 'nginxd' with pid 97
+2023-06-15 09:37:29,503 INFO spawned: 'php-fpmd' with pid 98
+2023-06-15 09:37:29,504 INFO spawned: 'crond' with pid 99
+2023-06-15 09:37:29,508 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:37:29,509 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:37:29,509 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:37:30,630 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 09:41:47,751 WARN received SIGQUIT indicating exit request
+2023-06-15 09:41:47,751 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 09:41:49,756 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 09:41:49,782 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 09:41:49,886 INFO stopped: nginxd (exit status 0)
+2023-06-15 09:41:50,888 INFO waiting for syslogd to die
+2023-06-15 09:41:51,000 INFO stopped: syslogd (exit status 0)
+2023-06-15 09:49:38,576 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 09:49:38,576 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 09:49:38,576 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 09:49:38,576 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 09:49:38,576 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 09:49:38,576 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 09:49:38,576 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 09:49:38,576 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 09:49:38,585 INFO RPC interface 'supervisor' initialized
+2023-06-15 09:49:38,585 INFO supervisord started with pid 1
+2023-06-15 09:49:39,587 INFO spawned: 'syslogd' with pid 94
+2023-06-15 09:49:39,588 INFO spawned: 'nginxd' with pid 95
+2023-06-15 09:49:39,590 INFO spawned: 'php-fpmd' with pid 96
+2023-06-15 09:49:39,591 INFO spawned: 'crond' with pid 97
+2023-06-15 09:49:39,594 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:49:39,594 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:49:39,594 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:49:40,692 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 09:49:45,571 WARN received SIGQUIT indicating exit request
+2023-06-15 09:49:45,572 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 09:49:47,574 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 09:49:48,595 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 09:49:48,596 INFO waiting for nginxd, syslogd to die
+2023-06-15 09:49:48,694 INFO stopped: nginxd (exit status 0)
+2023-06-15 09:49:49,798 INFO stopped: syslogd (exit status 0)
+2023-06-15 09:50:05,654 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 09:50:05,654 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 09:50:05,654 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 09:50:05,654 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 09:50:05,654 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 09:50:05,654 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 09:50:05,654 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 09:50:05,654 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 09:50:05,662 INFO RPC interface 'supervisor' initialized
+2023-06-15 09:50:05,663 INFO supervisord started with pid 1
+2023-06-15 09:50:06,665 INFO spawned: 'syslogd' with pid 100
+2023-06-15 09:50:06,666 INFO spawned: 'nginxd' with pid 101
+2023-06-15 09:50:06,668 INFO spawned: 'php-fpmd' with pid 102
+2023-06-15 09:50:06,669 INFO spawned: 'crond' with pid 103
+2023-06-15 09:50:06,671 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:50:06,671 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:50:06,671 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:50:07,759 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 09:50:33,783 WARN received SIGQUIT indicating exit request
+2023-06-15 09:50:33,783 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 09:50:35,787 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 09:50:36,812 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 09:50:36,812 INFO waiting for nginxd, syslogd to die
+2023-06-15 09:50:36,885 INFO stopped: nginxd (exit status 0)
+2023-06-15 09:50:37,994 INFO stopped: syslogd (exit status 0)
+2023-06-15 09:57:37,091 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 09:57:37,092 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 09:57:37,092 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 09:57:37,092 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 09:57:37,092 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 09:57:37,092 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 09:57:37,092 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 09:57:37,092 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 09:57:37,103 INFO RPC interface 'supervisor' initialized
+2023-06-15 09:57:37,103 INFO supervisord started with pid 1
+2023-06-15 09:57:38,105 INFO spawned: 'syslogd' with pid 96
+2023-06-15 09:57:38,106 INFO spawned: 'nginxd' with pid 97
+2023-06-15 09:57:38,108 INFO spawned: 'php-fpmd' with pid 98
+2023-06-15 09:57:38,109 INFO spawned: 'crond' with pid 99
+2023-06-15 09:57:38,114 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:57:38,114 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:57:38,114 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 09:57:39,247 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 09:58:10,847 WARN received SIGQUIT indicating exit request
+2023-06-15 09:58:10,847 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 09:58:12,852 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 09:58:12,896 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 09:58:12,985 INFO stopped: nginxd (exit status 0)
+2023-06-15 09:58:13,988 INFO waiting for syslogd to die
+2023-06-15 09:58:14,095 INFO stopped: syslogd (exit status 0)
+2023-06-15 10:05:20,113 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 10:05:20,116 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 10:05:20,116 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 10:05:20,116 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 10:05:20,116 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 10:05:20,116 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 10:05:20,116 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 10:05:20,116 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 10:05:20,128 INFO RPC interface 'supervisor' initialized
+2023-06-15 10:05:20,128 INFO supervisord started with pid 1
+2023-06-15 10:05:21,130 INFO spawned: 'syslogd' with pid 96
+2023-06-15 10:05:21,131 INFO spawned: 'nginxd' with pid 97
+2023-06-15 10:05:21,133 INFO spawned: 'php-fpmd' with pid 98
+2023-06-15 10:05:21,134 INFO spawned: 'crond' with pid 99
+2023-06-15 10:05:21,137 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:05:21,138 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:05:21,138 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:05:22,253 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 10:07:24,508 WARN received SIGQUIT indicating exit request
+2023-06-15 10:07:24,508 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 10:07:26,514 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 10:07:26,542 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 10:07:26,633 INFO stopped: nginxd (exit status 0)
+2023-06-15 10:07:27,635 INFO waiting for syslogd to die
+2023-06-15 10:07:27,741 INFO stopped: syslogd (exit status 0)
+2023-06-15 10:10:07,443 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 10:10:07,443 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 10:10:07,443 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 10:10:07,443 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 10:10:07,443 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 10:10:07,443 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 10:10:07,443 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 10:10:07,443 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 10:10:07,451 INFO RPC interface 'supervisor' initialized
+2023-06-15 10:10:07,452 INFO supervisord started with pid 1
+2023-06-15 10:10:08,453 INFO spawned: 'syslogd' with pid 94
+2023-06-15 10:10:08,454 INFO spawned: 'nginxd' with pid 95
+2023-06-15 10:10:08,456 INFO spawned: 'php-fpmd' with pid 96
+2023-06-15 10:10:08,457 INFO spawned: 'crond' with pid 97
+2023-06-15 10:10:08,460 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:10:08,460 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:10:08,460 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:10:09,553 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 10:11:26,069 WARN received SIGQUIT indicating exit request
+2023-06-15 10:11:26,070 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 10:11:28,076 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 10:11:28,106 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 10:11:28,184 INFO stopped: nginxd (exit status 0)
+2023-06-15 10:11:29,187 INFO waiting for syslogd to die
+2023-06-15 10:11:29,293 INFO stopped: syslogd (exit status 0)
+2023-06-15 10:23:53,710 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 10:23:53,711 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 10:23:53,711 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 10:23:53,711 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 10:23:53,711 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 10:23:53,711 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 10:23:53,711 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 10:23:53,711 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 10:23:53,723 INFO RPC interface 'supervisor' initialized
+2023-06-15 10:23:53,723 INFO supervisord started with pid 1
+2023-06-15 10:23:54,725 INFO spawned: 'syslogd' with pid 93
+2023-06-15 10:23:54,727 INFO spawned: 'nginxd' with pid 94
+2023-06-15 10:23:54,729 INFO spawned: 'php-fpmd' with pid 95
+2023-06-15 10:23:54,731 INFO spawned: 'crond' with pid 96
+2023-06-15 10:23:54,735 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:23:54,735 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:23:54,735 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:23:55,881 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 10:42:11,393 WARN received SIGQUIT indicating exit request
+2023-06-15 10:42:11,393 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 10:42:13,398 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 10:42:13,423 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 10:42:13,510 INFO stopped: nginxd (exit status 0)
+2023-06-15 10:42:14,512 INFO waiting for syslogd to die
+2023-06-15 10:42:14,616 INFO stopped: syslogd (exit status 0)
+2023-06-15 10:42:19,842 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 10:42:19,842 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 10:42:19,842 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 10:42:19,842 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 10:42:19,842 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 10:42:19,842 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 10:42:19,843 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 10:42:19,843 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 10:42:19,848 INFO RPC interface 'supervisor' initialized
+2023-06-15 10:42:19,848 INFO supervisord started with pid 1
+2023-06-15 10:42:20,851 INFO spawned: 'syslogd' with pid 96
+2023-06-15 10:42:20,855 INFO spawned: 'nginxd' with pid 97
+2023-06-15 10:42:20,858 INFO spawned: 'php-fpmd' with pid 98
+2023-06-15 10:42:20,861 INFO spawned: 'crond' with pid 99
+2023-06-15 10:42:20,866 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:42:20,866 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:42:20,866 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 10:42:21,988 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 11:35:59,128 WARN received SIGQUIT indicating exit request
+2023-06-15 11:35:59,130 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 11:36:01,144 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 11:36:01,333 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 11:36:01,433 INFO stopped: nginxd (exit status 0)
+2023-06-15 11:36:02,436 INFO waiting for syslogd to die
+2023-06-15 11:36:02,551 INFO stopped: syslogd (exit status 0)
+2023-06-15 11:51:46,782 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-15 11:51:46,783 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-15 11:51:46,783 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-15 11:51:46,783 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-15 11:51:46,783 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-15 11:51:46,783 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-15 11:51:46,783 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-15 11:51:46,783 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-15 11:51:46,790 INFO RPC interface 'supervisor' initialized
+2023-06-15 11:51:46,791 INFO supervisord started with pid 1
+2023-06-15 11:51:47,793 INFO spawned: 'syslogd' with pid 96
+2023-06-15 11:51:47,795 INFO spawned: 'nginxd' with pid 97
+2023-06-15 11:51:47,796 INFO spawned: 'php-fpmd' with pid 98
+2023-06-15 11:51:47,798 INFO spawned: 'crond' with pid 99
+2023-06-15 11:51:47,802 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 11:51:47,802 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 11:51:47,802 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-15 11:51:48,919 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-15 12:55:09,607 WARN received SIGQUIT indicating exit request
+2023-06-15 12:55:09,608 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-15 12:55:11,622 INFO stopped: crond (terminated by SIGTERM)
+2023-06-15 12:55:11,697 INFO stopped: php-fpmd (exit status 0)
+2023-06-15 12:55:11,770 INFO stopped: nginxd (exit status 0)
+2023-06-15 12:55:12,773 INFO waiting for syslogd to die
+2023-06-15 12:55:12,891 INFO stopped: syslogd (exit status 0)
+2023-06-27 06:48:35,782 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 06:48:35,782 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 06:48:35,782 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 06:48:35,782 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 06:48:35,782 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 06:48:35,782 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 06:48:35,782 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 06:48:35,782 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 06:48:35,794 INFO RPC interface 'supervisor' initialized
+2023-06-27 06:48:35,795 INFO supervisord started with pid 1
+2023-06-27 06:48:36,800 INFO spawned: 'syslogd' with pid 96
+2023-06-27 06:48:36,802 INFO spawned: 'nginxd' with pid 97
+2023-06-27 06:48:36,803 INFO spawned: 'php-fpmd' with pid 98
+2023-06-27 06:48:36,805 INFO spawned: 'crond' with pid 99
+2023-06-27 06:48:36,812 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:48:36,812 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:48:36,813 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:48:37,922 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 06:51:56,491 WARN received SIGQUIT indicating exit request
+2023-06-27 06:51:56,491 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 06:51:58,496 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 06:51:58,534 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 06:51:58,646 INFO stopped: nginxd (exit status 0)
+2023-06-27 06:51:59,648 INFO waiting for syslogd to die
+2023-06-27 06:51:59,751 INFO stopped: syslogd (exit status 0)
+2023-06-27 06:52:22,599 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 06:52:22,599 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 06:52:22,599 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 06:52:22,599 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 06:52:22,599 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 06:52:22,599 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 06:52:22,599 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 06:52:22,599 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 06:52:22,608 INFO RPC interface 'supervisor' initialized
+2023-06-27 06:52:22,608 INFO supervisord started with pid 1
+2023-06-27 06:52:23,610 INFO spawned: 'syslogd' with pid 103
+2023-06-27 06:52:23,612 INFO spawned: 'nginxd' with pid 104
+2023-06-27 06:52:23,616 INFO spawned: 'php-fpmd' with pid 105
+2023-06-27 06:52:23,618 INFO spawned: 'crond' with pid 106
+2023-06-27 06:52:23,619 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:52:23,619 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:52:23,619 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:52:24,745 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 06:52:43,388 WARN received SIGQUIT indicating exit request
+2023-06-27 06:52:43,388 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 06:52:45,392 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 06:52:45,417 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 06:52:45,522 INFO stopped: nginxd (exit status 0)
+2023-06-27 06:52:46,524 INFO waiting for syslogd to die
+2023-06-27 06:52:46,629 INFO stopped: syslogd (exit status 0)
+2023-06-27 06:53:29,300 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 06:53:29,301 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 06:53:29,301 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 06:53:29,301 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 06:53:29,301 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 06:53:29,301 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 06:53:29,301 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 06:53:29,301 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 06:53:29,310 INFO RPC interface 'supervisor' initialized
+2023-06-27 06:53:29,310 INFO supervisord started with pid 1
+2023-06-27 06:53:30,313 INFO spawned: 'syslogd' with pid 100
+2023-06-27 06:53:30,315 INFO spawned: 'nginxd' with pid 101
+2023-06-27 06:53:30,317 INFO spawned: 'php-fpmd' with pid 102
+2023-06-27 06:53:30,319 INFO spawned: 'crond' with pid 103
+2023-06-27 06:53:30,320 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:53:30,321 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:53:30,321 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 06:53:31,430 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 06:54:32,388 WARN received SIGQUIT indicating exit request
+2023-06-27 06:54:32,388 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 06:54:34,393 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 06:54:34,420 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 06:54:34,529 INFO stopped: nginxd (exit status 0)
+2023-06-27 06:54:35,532 INFO waiting for syslogd to die
+2023-06-27 06:54:35,637 INFO stopped: syslogd (exit status 0)
+2023-06-27 07:01:51,576 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 07:01:51,576 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 07:01:51,576 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 07:01:51,576 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 07:01:51,576 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 07:01:51,577 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 07:01:51,577 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 07:01:51,577 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 07:01:51,584 INFO RPC interface 'supervisor' initialized
+2023-06-27 07:01:51,584 INFO supervisord started with pid 1
+2023-06-27 07:01:52,587 INFO spawned: 'syslogd' with pid 96
+2023-06-27 07:01:52,589 INFO spawned: 'nginxd' with pid 97
+2023-06-27 07:01:52,590 INFO spawned: 'php-fpmd' with pid 98
+2023-06-27 07:01:52,592 INFO spawned: 'crond' with pid 99
+2023-06-27 07:01:52,597 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:01:52,597 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:01:52,597 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:01:53,694 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 07:02:51,569 WARN received SIGQUIT indicating exit request
+2023-06-27 07:02:51,570 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 07:02:53,574 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 07:02:53,610 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 07:02:53,734 INFO stopped: nginxd (exit status 0)
+2023-06-27 07:02:54,736 INFO waiting for syslogd to die
+2023-06-27 07:02:54,839 INFO stopped: syslogd (exit status 0)
+2023-06-27 07:03:59,589 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 07:03:59,589 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 07:03:59,589 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 07:03:59,589 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 07:03:59,589 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 07:03:59,589 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 07:03:59,589 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 07:03:59,589 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 07:03:59,596 INFO RPC interface 'supervisor' initialized
+2023-06-27 07:03:59,596 INFO supervisord started with pid 1
+2023-06-27 07:04:00,598 INFO spawned: 'syslogd' with pid 96
+2023-06-27 07:04:00,600 INFO spawned: 'nginxd' with pid 97
+2023-06-27 07:04:00,602 INFO spawned: 'php-fpmd' with pid 98
+2023-06-27 07:04:00,604 INFO spawned: 'crond' with pid 99
+2023-06-27 07:04:00,607 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:04:00,607 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:04:00,607 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:04:01,732 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 07:15:05,948 WARN received SIGQUIT indicating exit request
+2023-06-27 07:15:05,948 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 07:15:07,960 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 07:15:07,987 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 07:15:08,078 INFO stopped: nginxd (exit status 0)
+2023-06-27 07:15:09,080 INFO waiting for syslogd to die
+2023-06-27 07:15:09,184 INFO stopped: syslogd (exit status 0)
+2023-06-27 07:16:05,370 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 07:16:05,370 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 07:16:05,370 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 07:16:05,370 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 07:16:05,370 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 07:16:05,370 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 07:16:05,370 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 07:16:05,370 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 07:16:05,378 INFO RPC interface 'supervisor' initialized
+2023-06-27 07:16:05,379 INFO supervisord started with pid 1
+2023-06-27 07:16:06,381 INFO spawned: 'syslogd' with pid 95
+2023-06-27 07:16:06,383 INFO spawned: 'nginxd' with pid 96
+2023-06-27 07:16:06,384 INFO spawned: 'php-fpmd' with pid 97
+2023-06-27 07:16:06,389 INFO spawned: 'crond' with pid 98
+2023-06-27 07:16:06,389 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:16:06,390 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:16:06,390 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:16:07,489 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 07:19:00,829 WARN received SIGQUIT indicating exit request
+2023-06-27 07:19:00,829 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 07:19:02,834 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 07:19:03,877 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 07:19:03,878 INFO waiting for nginxd, syslogd to die
+2023-06-27 07:19:03,987 INFO stopped: nginxd (exit status 0)
+2023-06-27 07:19:05,094 INFO stopped: syslogd (exit status 0)
+2023-06-27 07:24:52,943 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 07:24:52,943 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 07:24:52,943 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 07:24:52,943 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 07:24:52,943 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 07:24:52,943 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 07:24:52,944 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 07:24:52,944 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 07:24:52,952 INFO RPC interface 'supervisor' initialized
+2023-06-27 07:24:52,952 INFO supervisord started with pid 1
+2023-06-27 07:24:53,954 INFO spawned: 'syslogd' with pid 95
+2023-06-27 07:24:53,956 INFO spawned: 'nginxd' with pid 96
+2023-06-27 07:24:53,958 INFO spawned: 'php-fpmd' with pid 97
+2023-06-27 07:24:53,960 INFO spawned: 'crond' with pid 98
+2023-06-27 07:24:53,963 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:24:53,963 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:24:53,963 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:24:55,081 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 07:28:06,237 WARN received SIGQUIT indicating exit request
+2023-06-27 07:28:06,237 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 07:28:08,241 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 07:28:08,281 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 07:28:08,382 INFO stopped: nginxd (exit status 0)
+2023-06-27 07:28:09,384 INFO waiting for syslogd to die
+2023-06-27 07:28:09,490 INFO stopped: syslogd (exit status 0)
+2023-06-27 07:36:11,936 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 07:36:11,936 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 07:36:11,936 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 07:36:11,936 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 07:36:11,936 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 07:36:11,936 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 07:36:11,936 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 07:36:11,936 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 07:36:11,947 INFO RPC interface 'supervisor' initialized
+2023-06-27 07:36:11,947 INFO supervisord started with pid 1
+2023-06-27 07:36:12,950 INFO spawned: 'syslogd' with pid 95
+2023-06-27 07:36:12,951 INFO spawned: 'nginxd' with pid 96
+2023-06-27 07:36:12,953 INFO spawned: 'php-fpmd' with pid 97
+2023-06-27 07:36:12,954 INFO spawned: 'crond' with pid 98
+2023-06-27 07:36:12,957 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:36:12,957 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:36:12,958 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:36:14,088 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 07:38:59,494 WARN received SIGQUIT indicating exit request
+2023-06-27 07:38:59,495 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 07:39:01,498 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 07:39:01,528 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 07:39:01,642 INFO stopped: nginxd (exit status 0)
+2023-06-27 07:39:02,644 INFO waiting for syslogd to die
+2023-06-27 07:39:02,749 INFO stopped: syslogd (exit status 0)
+2023-06-27 07:54:23,902 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 07:54:23,902 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 07:54:23,902 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 07:54:23,902 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 07:54:23,902 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 07:54:23,902 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 07:54:23,902 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 07:54:23,902 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 07:54:23,914 INFO RPC interface 'supervisor' initialized
+2023-06-27 07:54:23,914 INFO supervisord started with pid 1
+2023-06-27 07:54:24,917 INFO spawned: 'syslogd' with pid 96
+2023-06-27 07:54:24,918 INFO spawned: 'nginxd' with pid 97
+2023-06-27 07:54:24,920 INFO spawned: 'php-fpmd' with pid 98
+2023-06-27 07:54:24,922 INFO spawned: 'crond' with pid 99
+2023-06-27 07:54:24,927 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:54:24,927 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:54:24,927 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:54:26,088 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 07:56:43,398 WARN received SIGQUIT indicating exit request
+2023-06-27 07:56:43,399 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 07:56:45,402 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 07:56:46,453 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 07:56:46,454 INFO waiting for nginxd, syslogd to die
+2023-06-27 07:56:46,539 INFO stopped: nginxd (exit status 0)
+2023-06-27 07:56:47,661 INFO stopped: syslogd (exit status 0)
+2023-06-27 07:57:50,827 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 07:57:50,827 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 07:57:50,827 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 07:57:50,827 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 07:57:50,827 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 07:57:50,827 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 07:57:50,827 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 07:57:50,828 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 07:57:50,836 INFO RPC interface 'supervisor' initialized
+2023-06-27 07:57:50,836 INFO supervisord started with pid 1
+2023-06-27 07:57:51,839 INFO spawned: 'syslogd' with pid 96
+2023-06-27 07:57:51,840 INFO spawned: 'nginxd' with pid 97
+2023-06-27 07:57:51,842 INFO spawned: 'php-fpmd' with pid 98
+2023-06-27 07:57:51,844 INFO spawned: 'crond' with pid 99
+2023-06-27 07:57:51,853 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:57:51,853 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:57:51,853 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 07:57:52,985 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 11:43:31,856 INFO reaped unknown pid 369
+2023-06-27 11:43:32,094 INFO reaped unknown pid 368
+2023-06-27 13:49:01,569 WARN received SIGQUIT indicating exit request
+2023-06-27 13:49:01,573 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 13:49:03,587 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 13:49:04,717 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 13:49:04,717 INFO waiting for nginxd, syslogd to die
+2023-06-27 13:49:04,819 INFO stopped: nginxd (exit status 0)
+2023-06-27 13:49:05,958 INFO stopped: syslogd (exit status 0)
+2023-06-27 17:26:07,297 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-27 17:26:07,298 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-27 17:26:07,298 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-27 17:26:07,298 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-27 17:26:07,298 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-27 17:26:07,298 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-27 17:26:07,298 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-27 17:26:07,298 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-27 17:26:07,310 INFO RPC interface 'supervisor' initialized
+2023-06-27 17:26:07,311 INFO supervisord started with pid 1
+2023-06-27 17:26:08,313 INFO spawned: 'syslogd' with pid 103
+2023-06-27 17:26:08,314 INFO spawned: 'nginxd' with pid 104
+2023-06-27 17:26:08,316 INFO spawned: 'php-fpmd' with pid 105
+2023-06-27 17:26:08,318 INFO spawned: 'crond' with pid 106
+2023-06-27 17:26:08,324 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 17:26:08,324 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 17:26:08,324 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-27 17:26:09,483 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-27 19:17:57,498 WARN received SIGQUIT indicating exit request
+2023-06-27 19:17:57,500 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-27 19:17:59,512 INFO stopped: crond (terminated by SIGTERM)
+2023-06-27 19:17:59,567 INFO stopped: php-fpmd (exit status 0)
+2023-06-27 19:17:59,661 INFO stopped: nginxd (exit status 0)
+2023-06-27 19:18:00,663 INFO waiting for syslogd to die
+2023-06-27 19:18:00,775 INFO stopped: syslogd (exit status 0)
+2023-06-28 10:43:00,886 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-28 10:43:00,887 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-28 10:43:00,887 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-28 10:43:00,887 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-28 10:43:00,887 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-28 10:43:00,887 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-28 10:43:00,887 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-28 10:43:00,887 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-28 10:43:00,902 INFO RPC interface 'supervisor' initialized
+2023-06-28 10:43:00,903 INFO supervisord started with pid 1
+2023-06-28 10:43:01,907 INFO spawned: 'syslogd' with pid 96
+2023-06-28 10:43:01,909 INFO spawned: 'nginxd' with pid 97
+2023-06-28 10:43:01,911 INFO spawned: 'php-fpmd' with pid 98
+2023-06-28 10:43:01,912 INFO spawned: 'crond' with pid 99
+2023-06-28 10:43:01,917 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-28 10:43:01,918 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-28 10:43:01,918 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-28 10:43:03,243 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-28 13:51:27,640 WARN received SIGQUIT indicating exit request
+2023-06-28 13:51:27,643 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-28 13:51:29,653 INFO stopped: crond (terminated by SIGTERM)
+2023-06-28 13:51:29,755 INFO stopped: php-fpmd (exit status 0)
+2023-06-28 13:51:29,862 INFO stopped: nginxd (exit status 0)
+2023-06-28 13:51:30,864 INFO waiting for syslogd to die
+2023-06-28 13:51:30,976 INFO stopped: syslogd (exit status 0)
+2023-06-29 09:26:37,592 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-29 09:26:37,592 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-29 09:26:37,592 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-29 09:26:37,593 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-29 09:26:37,593 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-29 09:26:37,593 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-29 09:26:37,593 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-29 09:26:37,593 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-29 09:26:37,609 INFO RPC interface 'supervisor' initialized
+2023-06-29 09:26:37,610 INFO supervisord started with pid 1
+2023-06-29 09:26:38,612 INFO spawned: 'syslogd' with pid 93
+2023-06-29 09:26:38,619 INFO spawned: 'nginxd' with pid 94
+2023-06-29 09:26:38,621 INFO spawned: 'php-fpmd' with pid 95
+2023-06-29 09:26:38,622 INFO spawned: 'crond' with pid 96
+2023-06-29 09:26:38,638 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-29 09:26:38,641 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-29 09:26:38,641 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-29 09:26:39,963 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-29 13:44:47,605 WARN received SIGQUIT indicating exit request
+2023-06-29 13:44:47,612 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-29 13:44:49,622 INFO stopped: crond (terminated by SIGTERM)
+2023-06-29 13:44:49,678 INFO stopped: php-fpmd (exit status 0)
+2023-06-29 13:44:49,769 INFO stopped: nginxd (exit status 0)
+2023-06-29 13:44:50,770 INFO waiting for syslogd to die
+2023-06-29 13:44:50,883 INFO stopped: syslogd (exit status 0)
+2023-06-29 17:10:05,137 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-29 17:10:05,137 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-06-29 17:10:05,137 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-06-29 17:10:05,137 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-06-29 17:10:05,137 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-06-29 17:10:05,137 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-06-29 17:10:05,137 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-06-29 17:10:05,137 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-06-29 17:10:05,146 INFO RPC interface 'supervisor' initialized
+2023-06-29 17:10:05,146 INFO supervisord started with pid 1
+2023-06-29 17:10:06,149 INFO spawned: 'syslogd' with pid 96
+2023-06-29 17:10:06,150 INFO spawned: 'nginxd' with pid 97
+2023-06-29 17:10:06,152 INFO spawned: 'php-fpmd' with pid 98
+2023-06-29 17:10:06,154 INFO spawned: 'crond' with pid 99
+2023-06-29 17:10:06,160 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-29 17:10:06,160 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-29 17:10:06,160 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-06-29 17:10:07,328 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-29 19:11:32,458 WARN received SIGQUIT indicating exit request
+2023-06-29 19:11:32,458 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-06-29 19:11:34,461 INFO stopped: crond (terminated by SIGTERM)
+2023-06-29 19:11:35,486 INFO stopped: php-fpmd (exit status 0)
+2023-06-29 19:11:35,487 INFO waiting for nginxd, syslogd to die
+2023-06-29 19:11:35,554 INFO stopped: nginxd (exit status 0)
+2023-06-29 19:11:36,658 INFO stopped: syslogd (exit status 0)
+2023-07-04 05:33:23,158 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-07-04 05:33:23,159 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-07-04 05:33:23,159 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-07-04 05:33:23,159 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-07-04 05:33:23,159 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-04 05:33:23,159 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-07-04 05:33:23,159 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-07-04 05:33:23,159 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-07-04 05:33:23,168 INFO RPC interface 'supervisor' initialized
+2023-07-04 05:33:23,169 INFO supervisord started with pid 1
+2023-07-04 05:33:24,171 INFO spawned: 'syslogd' with pid 103
+2023-07-04 05:33:24,173 INFO spawned: 'nginxd' with pid 104
+2023-07-04 05:33:24,174 INFO spawned: 'php-fpmd' with pid 105
+2023-07-04 05:33:24,176 INFO spawned: 'crond' with pid 106
+2023-07-04 05:33:24,180 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-04 05:33:24,180 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-04 05:33:24,180 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-04 05:33:25,296 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-04 12:01:59,009 WARN received SIGQUIT indicating exit request
+2023-07-04 12:01:59,011 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-07-04 12:02:01,025 INFO stopped: crond (terminated by SIGTERM)
+2023-07-04 12:02:02,054 INFO stopped: php-fpmd (exit status 0)
+2023-07-04 12:02:02,056 INFO waiting for nginxd, syslogd to die
+2023-07-04 12:02:02,179 INFO stopped: nginxd (exit status 0)
+2023-07-04 12:02:03,308 INFO stopped: syslogd (exit status 0)
+2023-07-04 12:03:14,641 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-07-04 12:03:14,641 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-07-04 12:03:14,641 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-07-04 12:03:14,641 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-07-04 12:03:14,641 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-04 12:03:14,641 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-07-04 12:03:14,641 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-07-04 12:03:14,642 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-07-04 12:03:14,650 INFO RPC interface 'supervisor' initialized
+2023-07-04 12:03:14,650 INFO supervisord started with pid 1
+2023-07-04 12:03:15,659 INFO spawned: 'syslogd' with pid 96
+2023-07-04 12:03:15,661 INFO spawned: 'nginxd' with pid 97
+2023-07-04 12:03:15,662 INFO spawned: 'php-fpmd' with pid 98
+2023-07-04 12:03:15,664 INFO spawned: 'crond' with pid 99
+2023-07-04 12:03:15,667 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-04 12:03:15,667 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-04 12:03:15,667 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-04 12:03:16,788 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-04 13:40:43,348 WARN received SIGQUIT indicating exit request
+2023-07-04 13:40:43,348 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-07-04 13:40:45,359 INFO stopped: crond (terminated by SIGTERM)
+2023-07-04 13:40:45,393 INFO stopped: php-fpmd (exit status 0)
+2023-07-04 13:40:45,472 INFO stopped: nginxd (exit status 0)
+2023-07-04 13:40:46,474 INFO waiting for syslogd to die
+2023-07-04 13:40:46,581 INFO stopped: syslogd (exit status 0)
+2023-07-05 07:38:29,105 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-07-05 07:38:29,106 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-07-05 07:38:29,106 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-07-05 07:38:29,106 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-07-05 07:38:29,106 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-05 07:38:29,106 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-07-05 07:38:29,106 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-07-05 07:38:29,106 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-07-05 07:38:29,117 INFO RPC interface 'supervisor' initialized
+2023-07-05 07:38:29,118 INFO supervisord started with pid 1
+2023-07-05 07:38:30,120 INFO spawned: 'syslogd' with pid 96
+2023-07-05 07:38:30,122 INFO spawned: 'nginxd' with pid 97
+2023-07-05 07:38:30,123 INFO spawned: 'php-fpmd' with pid 98
+2023-07-05 07:38:30,125 INFO spawned: 'crond' with pid 99
+2023-07-05 07:38:30,134 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-05 07:38:30,136 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-05 07:38:30,136 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-05 07:38:31,269 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-05 12:41:22,958 WARN received SIGQUIT indicating exit request
+2023-07-05 12:41:22,961 INFO waiting for nginxd, php-fpmd, crond, syslogd to die
+2023-07-05 12:41:24,969 INFO stopped: crond (terminated by SIGTERM)
+2023-07-05 12:41:25,994 INFO stopped: php-fpmd (exit status 0)
+2023-07-05 12:41:25,994 INFO waiting for nginxd, syslogd to die
+2023-07-05 12:41:26,066 INFO stopped: nginxd (exit status 0)
+2023-07-05 12:41:27,190 INFO stopped: syslogd (exit status 0)
+2023-07-18 12:16:16,168 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-07-18 12:16:16,169 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2023-07-18 12:16:16,169 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2023-07-18 12:16:16,169 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2023-07-18 12:16:16,169 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2023-07-18 12:16:16,169 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2023-07-18 12:16:16,169 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2023-07-18 12:16:16,169 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2023-07-18 12:16:16,181 INFO RPC interface 'supervisor' initialized
+2023-07-18 12:16:16,181 INFO supervisord started with pid 1
+2023-07-18 12:16:17,183 INFO spawned: 'syslogd' with pid 96
+2023-07-18 12:16:17,185 INFO spawned: 'nginxd' with pid 97
+2023-07-18 12:16:17,187 INFO spawned: 'php-fpmd' with pid 98
+2023-07-18 12:16:17,188 INFO spawned: 'crond' with pid 99
+2023-07-18 12:16:17,195 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-18 12:16:17,196 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-18 12:16:17,196 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2023-07-18 12:16:18,341 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
