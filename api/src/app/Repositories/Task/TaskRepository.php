@@ -4,6 +4,7 @@ namespace App\Repositories\Task;
 
 use App\Collections\Task\TaskCollection;
 use App\Models\Task;
+use App\Repositories\Task\Interfaces\TaskRepositoryInterface;
 
 class TaskRepository implements TaskRepositoryInterface
 {

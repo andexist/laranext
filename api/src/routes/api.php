@@ -3,6 +3,7 @@
 use App\Http\Controllers\API\V1\Task\TaskController;
 use App\Http\Controllers\API\V1\AuthorController;
 use App\Http\Controllers\API\V1\Task\TaskExporterController;
+use App\Http\Controllers\API\V1\Elasticsearch\Task\TaskElasticsearchController;
 use App\Http\Controllers\API\V1\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(
     [
         'prefix' => 'v1', 
-        'middleware' => 'auth:sanctum'
+        //'middleware' => 'auth:sanctum'
     ], 
     function() {
         Route::apiResource('tasks', TaskController::class);
@@ -34,4 +35,6 @@ Route::group(
        Route::get('/tasks/export/csv', [TaskExporterController::class, 'exportToCSV']);
        Route::get('/tasks/export/xlsx', [TaskExporterController::class, 'exportToXLSX']);
        Route::get('/tasks/export/pdf', [TaskExporterController::class, 'exportToPDF']);
+
+       Route::post('/tasks/search', TaskElasticsearchController::class);
 });

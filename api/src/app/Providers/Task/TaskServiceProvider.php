@@ -3,7 +3,7 @@
 namespace App\Providers\Task;
 
 use App\Repositories\Task\TaskRepository;
-use App\Repositories\Task\TaskRepositoryInterface;
+use App\Repositories\Task\Interfaces\TaskRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class TaskServiceProvider extends ServiceProvider

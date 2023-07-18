@@ -36,10 +36,10 @@ class TaskController extends Controller
     {
         $task = Task::create([
             'title' => $request->title(),
-            'comment' => $request->comment(),
+            'body' => $request->body(),
             'time_estimated' => $request->timeEstimated(),
             'time_spent' => $request->timeSpent(),
-            'author_id' => auth()->id(),
+            'author_id' => auth()->id() ?? $request->get('author_id'),
         ]);
 
         return (new TaskResource($task))
@@ -64,7 +64,7 @@ class TaskController extends Controller
     {
         $task->update([
             'title' => $request->title(),
-            'comment' => $request->comment(),
+            'body' => $request->body(),
             'time_estimated' => $request->timeEstimated(),
             'time_spent' => $request->timeSpent(),
             'author_id' => auth()->id() ?? 1,

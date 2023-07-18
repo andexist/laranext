@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Task;
+namespace App\Repositories\Task\Interfaces;
 
 use App\Collections\Task\TaskCollection;
 use App\Models\Task;

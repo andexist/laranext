@@ -171,9 +171,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
-
-        // Task Service Provider
+        
+        // Custom providers
         App\Providers\Task\TaskServiceProvider::class,
+        App\Providers\ObserverServiceProvider::class,
     ])->toArray(),
 
     /*

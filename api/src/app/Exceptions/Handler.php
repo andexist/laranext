@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use App\Exceptions\Elasticsearch\ElasticsearchRepositoryNotFoundException;
 use Carbon\Exceptions\InvalidFormatException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
@@ -80,6 +81,20 @@ class Handler extends ExceptionHandler
                         ]
                     ]
                 )->setStatusCode(Response::HTTP_FORBIDDEN);
+            }
+        );
+
+        $this->renderable(function(ElasticsearchRepositoryNotFoundException $e, $request) {
+            return response()->json(
+                    [
+                        'status' => Response::HTTP_NOT_FOUND,
+                        'error'  => [
+                            'code'    => Response::HTTP_NOT_FOUND,
+                            'type'    => $e->getType(),
+                            'message' => $e->getMessage()
+                        ]
+                    ]
+                )->setStatusCode(Response::HTTP_NOT_FOUND);
             }
         );
     }

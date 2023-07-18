@@ -48,6 +48,11 @@ class Task extends Model
         return $this->time_spent ?? 0;
     }
 
+    public function createdAt(): string
+    {
+        return $this->created_at;
+    }
+
     /**
      * Create a new Eloquent Collection instance.
      *

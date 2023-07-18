@@ -34,9 +34,9 @@ class StoreTaskRequest extends FormRequest
         return $this->title;
     }
 
-    public function comment(): string
+    public function body(): string
     {
-        return $this->comment;
+        return $this->body;
     }
 
     public function timeEstimated(): string
