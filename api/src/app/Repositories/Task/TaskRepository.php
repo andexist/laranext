@@ -29,4 +29,14 @@ class TaskRepository implements TaskRepositoryInterface
             ->whereBetween('created_at', [$from, $to])
             ->get();
     }
+
+    public function save(Task $task)
+    {
+        $task->save();
+    }
+
+    public function delete(Task $task)
+    {
+        $task->delete();
+    }
 }
