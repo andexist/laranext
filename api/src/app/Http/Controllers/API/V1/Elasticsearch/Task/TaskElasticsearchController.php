@@ -16,8 +16,8 @@ class TaskElasticsearchController extends Controller
     public function __invoke(TaskElasticsearchRequest $request)
     {
         // use this for testing purpose
-        $user = User::where('email', 'john@test.com')->first();
-        //$user = auth()->user();
+        //$user = User::where('email', 'john@test.com')->first();
+        $user = auth()->user();
 
         return response()->json(new TaskElasticsearchResource(
             $this->taskElasticsearchService->search($user->id, $request->getQuery())

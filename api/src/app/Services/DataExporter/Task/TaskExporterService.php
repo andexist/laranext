@@ -6,7 +6,7 @@ use App\DTO\DataExporter\AbstractDataExporterDTO;
 use App\DTO\DataExporter\Task\TaskExporterDTO;
 use App\Exceptions\Task\TaskExporterDTOException;
 use App\Exports\Task\TaskExport;
-use App\Repositories\Task\TaskRepositoryInterface;
+use App\Repositories\Task\Interfaces\TaskRepositoryInterface;
 use App\Services\DataExporter\AbstractDataExporter;
 use Illuminate\Support\Carbon;
 use Maatwebsite\Excel\Facades\Excel;

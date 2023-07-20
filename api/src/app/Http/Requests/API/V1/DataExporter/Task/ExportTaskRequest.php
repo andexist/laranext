@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\API\V1\Task;
+namespace App\Http\Requests\API\V1\DataExporter\Task;
 
 use App\Rules\ValidDateTimeString;
 use Illuminate\Foundation\Http\FormRequest;

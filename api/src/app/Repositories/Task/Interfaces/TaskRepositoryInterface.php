@@ -12,4 +12,6 @@ interface TaskRepositoryInterface extends AbstractRepositoryInterface
     public function findAll(): TaskCollection;
     public function findByAuthor(int $authorId): TaskCollection;
     public function findByAuthorAndDate(int $authorId, string $from, string $to): TaskCollection;
+    public function save(Task $task);
+    public function delete(Task $task);
 }

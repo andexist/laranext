@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\API\V1\Task;
+namespace App\Http\Controllers\API\V1\DataExporter\Task;
 
 use App\DTO\DataExporter\Task\TaskExporterDTO;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\API\V1\Task\ExportTaskRequest;
+use App\Http\Requests\API\V1\DataExporter\Task\ExportTaskRequest;
 use App\Services\DataExporter\Task\TaskExporterService;
 
 class TaskExporterController extends Controller

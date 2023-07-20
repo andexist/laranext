@@ -10,11 +10,14 @@ use App\Http\Requests\API\V1\Task\UpdateTaskRequest;
 use App\Http\Resources\V1\TaskResource;
 use App\Http\Resources\V1\TaskResourceCollection;
 use App\Models\Task;
-use App\Models\User;
+use App\Services\Task\TaskService;
 use Symfony\Component\HttpFoundation\Response;
 
 class TaskController extends Controller
 {
+    public function __construct(private TaskService $taskService)
+    {}
+    
     /**
      * Display a listing of the resource.
      */
@@ -29,25 +32,7 @@ class TaskController extends Controller
         return new TaskResourceCollection($tasks);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreTaskRequest $request)
-    {
-        $task = Task::create([
-            'title' => $request->title(),
-            'body' => $request->body(),
-            'time_estimated' => $request->timeEstimated(),
-            'time_spent' => $request->timeSpent(),
-            'author_id' => auth()->id() ?? $request->get('author_id'),
-        ]);
-
-        return (new TaskResource($task))
-            ->response()
-            ->setStatusCode(Response::HTTP_CREATED);
-    }
-
-    /**
+     /**
      * Display the specified resource.
      */
     public function show(Task $task)
@@ -58,17 +43,37 @@ class TaskController extends Controller
     }
 
     /**
+     * Store a newly created resource in storage.
+     */
+    public function store(StoreTaskRequest $request)
+    {
+        $task = new Task();
+        $task->id = null;
+        $task->title = $request->title();
+        $task->body = $request->body();
+        $task->time_estimated = $request->timeEstimated();
+        $task->time_spent = $request->timeSpent();
+        $task->author_id = auth()->id() ?? $request->get('author_id');
+
+        $this->taskService->createOrUpdate($task);
+
+        return (new TaskResource($task))
+            ->response()
+            ->setStatusCode(Response::HTTP_CREATED);
+    }
+
+    /**
      * Update the specified resource in storage.
      */
     public function update(UpdateTaskRequest $request, Task $task)
     {
-        $task->update([
-            'title' => $request->title(),
-            'body' => $request->body(),
-            'time_estimated' => $request->timeEstimated(),
-            'time_spent' => $request->timeSpent(),
-            'author_id' => auth()->id() ?? 1,
-        ]);
+        $task->title = $request->title();
+        $task->body = $request->body();
+        $task->time_estimated = $request->timeEstimated();
+        $task->time_spent = $request->timeSpent();
+        $task->author_id = auth()->id() ?? $request->get('author_id');
+
+        $this->taskService->createOrUpdate($task);
 
         return (new TaskResource($task))
             ->response()
@@ -80,7 +85,7 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
-        $task->delete();
+        $this->taskService->delete($task);
 
         return response()->json(null, Response::HTTP_NO_CONTENT);
     }
