@@ -28,6 +28,7 @@ class Handler extends ExceptionHandler
      */
     public function register(): void
     {
+
         $this->renderable(function(NotFoundHttpException $e, $request) {
             if ($request->is('api/*') && !str_contains($request->getRequestUri(), 'export')) {
                 return response()->json(
@@ -40,6 +41,18 @@ class Handler extends ExceptionHandler
                     ],
                 ], Response::HTTP_NOT_FOUND);
             }
+        });
+
+        $this->renderable(function(NotFoundHttpException $e, $request) {
+            return response()->json(
+                [
+                    'status' => Response::HTTP_NOT_FOUND,
+                    'error'  => [
+                        'message' => 'Resource Not Found',
+                        'type' => 'NotFoundHttpException',
+                        'status' => (string)$e->getStatusCode(), 
+                ],
+            ], Response::HTTP_NOT_FOUND);
         });
         
         $this->renderable(function(InvalidArgumentException $e, $request) {
