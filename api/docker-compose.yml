@@ -61,9 +61,29 @@ services:
     networks:
       - apinet
 
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - apinet  
+
+  redisinsight:
+    image: redislabs/redisinsight:latest
+    container_name: redisinsight
+    ports:
+      - "8001:8001"
+    networks:
+      - apinet     
+
 volumes:
   es_data:
     driver: local
+  redis_data:
+    driver: local  
 
 networks:
   apinet:

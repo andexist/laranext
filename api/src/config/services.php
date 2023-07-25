@@ -34,4 +34,9 @@ return [
     'elasticsearch' => [
         'host' => env('ES_HOST'),
     ],
+
+    'redis' => [
+        'host' => env('REDIS_HOST'),
+        'port' => env('REDIS_PORT'),
+    ],
 ];
